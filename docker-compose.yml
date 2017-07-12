@@ -1,0 +1,10 @@
+version: '2'
+services:
+  gaego:
+    build: .
+    volumes:
+      - ".:${SRC_PATH}"
+    ports:
+      - "8000:8000"
+      - "8080:8080"
+    working_dir: "${SRC_PATH}"
